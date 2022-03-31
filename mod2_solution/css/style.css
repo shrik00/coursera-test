@@ -1,1 +1,49 @@
 
+h1{
+	color:red;
+	text-align: center;
+}
+section{
+	border:2px solid black;
+	margin: 0px;
+	box-sizing: border-box;
+	float:left;
+}
+section p
+{
+	text-align: right;
+	border: 1px solid black;
+	
+
+}
+.row {
+	width:100%;
+}
+@media(min-width: 992px)
+{
+	.col-lg-4{
+		
+		width:33.33%;
+		
+	}
+}
+@media((max-width: 991px)and(min-width: 768))
+{
+	.col-md-6{
+		
+		width:50%;
+		
+		
+	
+	
+		
+	
+}
+@media(max-width: 767px)
+{
+	.col-sm-12{
+		
+		width:100%;
+		
+	}
+}
