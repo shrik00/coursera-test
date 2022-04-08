@@ -24,11 +24,12 @@ h1{
 height:1000px;
 }
 #c,#b,#s{
-	text-align: center;
+	
 	position: relative;
-	width: 120%;
+	width: 100%;
+	text-align: center;
 	background-color: white;
 	border: solid 1px black;
-	margin-left: -20px;
+	margin-left: auto;
 	}
 	
