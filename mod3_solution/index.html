@@ -18,23 +18,26 @@
   </head>
 <body>
   <header>
-  	<nav id="header-nav" class="navbar navbar-default">
+  <!--	<nav id="header-nav" class="navbar navbar-default">
   		<div class="container">
-  			
-  			<div class="navbar-brand" >
-  				Food,LLC 
-  			</div>	
- 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-           		 <span class="sr-only">Toggle navigation</span>
-           		 <span class="icon-bar"></span>
-           		 <span class="icon-bar"></span>
-           		 <span class="icon-bar"></span>
-          	</button>
-
+  			<div class="navbar-header">
+  				<div class="navbar-brand" >
+  					Food,LLC 
+  				</div>	
+ 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+           			<span class="sr-only">Toggle navigation</span>
+           		 	<span class="icon-bar"></span>
+           		 	<span class="icon-bar"></span>
+           		    <span class="icon-bar"></span>
+          		</button>
+			</div>
 
   			<div id="collapsable-nav" class="collapse navbar-collapse">
   				<ul id="nav-list" class="nav navbar-nav navbar-right">
-  					<li class="visible-xs-active">Chicken</li>
+  					<li><a href="#menu">
+                	<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            		</li>
+  					<li class="hidden-xs">Chicken</li>
   					<li class="visible-xs-active">Beef</li>
   					<li class="visible-xs-active">Sushi</li>
   				
@@ -45,12 +48,56 @@
 
   		
   	</nav>
+  -->
+      <nav id="header-nav" class="navbar navbar-expand-sm navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#menu">Food,LLC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right hidden-lg hidden-md hidden sm">
+        <li class="nav-item" >
+          <a class="nav-link d-sm-none" id="c" href="#menu-headc">Chicken</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-sm-none" id="b" href="#menu-headb">Beef</a>
+        </li>
+        <li class="nav-item d-sm-none">
+          <a class="nav-link" id="s" href="#menu-heads">Sushi</a>
+        </li>
+       </ul>
+    </div>
+  </div>
+</nav>
   </header>
-  
+  <h1 class="text-center" id="menu">Menu</h1>
+  <section id="content" class="row">
+  	<div class="col-md-4 col-sm-6 col-xs-12">
+  		<div id="menu-headc" class="text-center">Chicken
+  		<p id="menu-content">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		<a href="#menu">Back to top</a>
+  		</div>
+  	</div>
+  	<div class="col-md-4 col-sm-6 col-xs-12">
+  		<div id="menu-headb" class="text-center">Beef
+  		<p id="menu-content" >Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		<a href="#menu">Back to top</a>
+  		</div>
+  	</div>
+  	<div class="col-md-4 col-sm-12 col-xs-12">
+  		<div id="menu-heads" class="text-center">Sushi
+  		<p id="menu-content">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		<a href="#menu">Back to top</a>
+  		</div>
+  	</div>
+  </section>
+
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
- <!-- <script src="js/script.js"></script> -->
+ <script src="js/script.js"></script> 
 </body>
 </html>

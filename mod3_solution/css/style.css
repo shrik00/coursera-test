@@ -1,12 +1,33 @@
-body{
-	
-}
+
 #header-nav{
 	background-color: grey;
-	border: 1px solid black;
+	border: 2px solid black;
+	margin: auto;
 }
 .navbar-brand{
 	float:left;
 	margin-left: 0;
     font-weight:bold;
 }
+h1{
+		padding:10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#menu-headc,#menu-headb,#menu-heads{
+	background-color: grey;
+	margin:10px 20px 10px 20px;
+	font-weight: bold;
+	font:justify;
+}
+#menu-content{
+height:1000px;
+}
+#c,#b,#s{
+	text-align: center;
+	width: 100%;
+	background-color: white;
+	border: solid 1px black;
+	margin: auto; 
+}
+	
