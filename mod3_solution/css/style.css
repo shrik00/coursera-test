@@ -25,9 +25,10 @@ height:1000px;
 }
 #c,#b,#s{
 	text-align: center;
-	width: 100%;
+	position: relative;
+	width: 120%;
 	background-color: white;
 	border: solid 1px black;
-	margin: auto; 
-}
+	margin-left: -20px;
+	}
 	
