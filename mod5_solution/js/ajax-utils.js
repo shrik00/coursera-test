@@ -31,7 +31,8 @@ ajaxUtils.sendGetRequest =
                        isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
-    request.send(null); // for POST only
+    // console.log(request);
+     request.send(null); // for POST only
   };
 
 
@@ -50,6 +51,7 @@ function handleResponse(request,
     }
 
     if (isJsonResponse) {
+      // console.log(responseHandler);
       responseHandler(JSON.parse(request.responseText));
     }
     else {
